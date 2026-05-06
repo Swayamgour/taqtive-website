@@ -34,9 +34,11 @@
                     <div class="swiper-slide team-slide">
                         <a href="{{ url($service['path']) }}">
                             <div class="team-card">
+                                
 
                                 <img
-                                    src="http://localhost:5000/{{$service['image']}}"
+                                  
+                                    src="{{ $imageUrl . $service['image'] }}"
                                     alt=""
                                     class="team-card__img" />
 
@@ -241,7 +243,7 @@
 
                 <!-- IMAGE -->
                 <div class="item-img fix img-cover p-relative mb-35">
-                    <img src="http://localhost:5000/{{$product['image'] }}" alt="">
+                    <img  src="{{ $imageUrl . $product['image'] }}" alt="">
 
                     <!-- DATE -->
                     <h6 class="item-date fx-heading-1 has-clr-white fx-font-600 text-uppercase">

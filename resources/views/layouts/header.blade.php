@@ -162,7 +162,7 @@
 
                         <!-- IMAGE (same class, same UI) -->
                         <div class="fx-hero-1-slider-item-img img-cover fix">
-                            <img src="http://localhost:5000/{{$slide['image'] }}" alt="">
+                            <img src="{{ $imageUrl . $slide['image'] }}" alt="">
                         </div>
 
                         <!-- CONTENT (same UI) -->

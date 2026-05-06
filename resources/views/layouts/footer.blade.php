@@ -447,10 +447,7 @@
             speed: 800,
             grabCursor: true,
 
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+           
 
             breakpoints: {
                 0: {
@@ -580,7 +577,7 @@
         };
 
         try {
-            const res = await fetch("http://localhost:5000/api/contact", {
+            const res = await fetch("https://taqtiveadmin.amaxjobs.com/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
